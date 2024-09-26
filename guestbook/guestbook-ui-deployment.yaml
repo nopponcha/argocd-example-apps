@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworldnodejs
+  name: helloworld
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: helloworldnodejs
+      app: helloworld
   template:
     metadata:
       labels:
-        app: helloworldnodejs
+        app: helloworld
     spec:
       containers:
-      - image: docker.io/noppon/hello-world-nodejs:1.0.0-1
-        name: helloworldnodejs
+      - image: docker.io/noppon/hello-world:1.0.3
+        name: helloworld
       imagePullSecrets:
       - name: my-registry-secret
