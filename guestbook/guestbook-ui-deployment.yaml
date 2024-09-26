@@ -18,5 +18,3 @@ spec:
         name: helloworldnodejs
       imagePullSecrets:
       - name: my-registry-secret
-        ports:
-        - containerPort: 80
