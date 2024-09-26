@@ -17,6 +17,6 @@ spec:
       - image: docker.io/noppon/hello-world:1.0.0-2
         name: guestbook-ui
       imagePullSecrets:
-        - name: my-registry-secret
+      - name: my-registry-secret
         ports:
         - containerPort: 80
