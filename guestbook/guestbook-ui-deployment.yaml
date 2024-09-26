@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: hello-world-nodejs
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: hello-world-nodejs
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: hello-world-nodejs
     spec:
       containers:
       - image: docker.io/noppon/hello-world-nodejs:1.0.0-1
-        name: guestbook-ui
+        name: hello-world-nodejs
       imagePullSecrets:
       - name: my-registry-secret
         ports:
