@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: noppon/hello-world-nodejs:1.0.0-1
+      - image: docker.io/noppon/hello-world-nodejs:1.0.0-1
         name: guestbook-ui
       imagePullSecrets:
       - name: my-registry-secret
