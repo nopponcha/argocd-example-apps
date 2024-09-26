@@ -14,7 +14,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: docker.io/noppon/hello-world:1.0.3
+      - image: docker.io/noppon/hello-world:1.0.2
         name: helloworld
       imagePullSecrets:
       - name: my-registry-secret
