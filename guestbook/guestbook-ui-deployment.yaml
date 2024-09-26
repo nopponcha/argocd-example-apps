@@ -14,8 +14,9 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: noppon/hello-world:1.0.0-2
         name: guestbook-ui
-        imagePullPolicy: Always
+      imagePullSecrets:
+        - name: my-registry-secret
         ports:
         - containerPort: 80
