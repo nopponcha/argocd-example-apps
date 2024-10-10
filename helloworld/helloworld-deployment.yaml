@@ -14,7 +14,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: docker.io/noppon/ks-guestbook-demo:1.0.0
+      - image: noppon/ks-guestbook-demo:9999
         name: helloworld
       imagePullSecrets:
       - name: my-registry-secret
