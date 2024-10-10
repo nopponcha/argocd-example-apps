@@ -12,6 +12,8 @@ spec:
     path: helloworld
     repoURL: "https://github.com/nopponcha/argocd-example-apps.git"
     targetRevision: master
+    directory:
+      recurse: true    
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
